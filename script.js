@@ -9,9 +9,18 @@ function writePassword() {
   passwordText.value = password;
 
 }
-function generatePassword(){
-var passwordLength = prompt("how many charaters for password");
-console.log(passwordLength)
+function generatePassword() {
+  var passwordLength = prompt("how many charaters for password");
+  console.log(passwordLength)
+  if (passwordLength < 8 || passwordLength > 128) {
+    alert("password length must be 8-128 charaters")
+    return "please try again"
+  }
+var lower = confirm("would you like lowercase");
+var upper = confirm("would you like upper");
+var number = confirm("would you like number");
+var character = confirm("would you like charater");
+console.log(lower,upper,number,character)
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
