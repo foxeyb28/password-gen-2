@@ -21,9 +21,23 @@ var upper = confirm("would you like upper");
 var number = confirm("would you like number");
 var character = confirm("would you like charater");
 console.log(lower,upper,number,character)
+if (lower === false&& upper === false&& number === false&& character === false&&) {
+  alert("you have to choose a charater");
+  return "please try again"
+}
+
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+ { var lower = confirm("valid");
+  var upper = confirm("valid");
+  var number = confirm("valid");
+  var character = confirm("valid");
+  if (lower === true&& upper === true&& number === true&& character ===true&& length === true){
+    alert("your secure password")}
+    return ("generated password")
+  }
+  
 
 // GIVEN I need a new, secure password
 // WHEN I click the button to generate a password
