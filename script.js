@@ -16,28 +16,30 @@ function generatePassword() {
     alert("password length must be 8-128 charaters")
     return "please try again"
   }
-var lower = confirm("would you like lowercase");
-var upper = confirm("would you like upper");
-var number = confirm("would you like number");
-var character = confirm("would you like charater");
-console.log(lower,upper,number,character)
-if (lower === false&& upper === false&& number === false&& character === false&&) {
-  alert("you have to choose a charater");
-  return "please try again"
-}
+  var lower = confirm("would you like lowercase");
+  var upper = confirm("would you like upper");
+  var number = confirm("would you like number");
+  var character = confirm("would you like charater");
+  console.log(lower, upper, number, character)
 
 }
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
- { var lower = confirm("valid");
-  var upper = confirm("valid");
-  var number = confirm("valid");
-  var character = confirm("valid");
-  if (lower === true&& upper === true&& number === true&& character ===true&& length === true){
-    alert("your secure password")}
-    return ("generated password")
-  }
+
+if ("passwordLength < 8 || passwordLength > 128", "lower", "upper", "number", "charater") {
+  alert("Your Secured Password")
   
+  myInput = document.getElementById("psw");
+  letter = document.getElementById("letter");
+  capital = document.getElementById("capital");
+  number = document.getElementById("number");
+  length = document.getElementById("length");
+  
+}
+
+
 
 // GIVEN I need a new, secure password
 // WHEN I click the button to generate a password
